@@ -1,0 +1,17 @@
+{
+  "name": "shahane-gpt",
+  "version": "1.0.0",
+  "description": "Offline Shahane GPT chatbot: Express + vanilla web UI on top of the existing C++ Q&A engine",
+  "private": true,
+  "main": "server/index.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build:cpp": "node scripts/build-cpp.js",
+    "setup": "npm install && npm run build:cpp",
+    "start": "node server/index.js",
+    "test": "node scripts/smoke-test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
