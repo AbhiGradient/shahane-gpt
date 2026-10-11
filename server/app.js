@@ -11,12 +11,6 @@ function createApp(config, engine) {
     `[::1]:${config.port}`
   ]);
 
-    const allowedHosts = new Set([
-    `localhost:${config.port}`,
-    `127.0.0.1:${config.port}`,
-    `[::1]:${config.port}`
-  ]);
-
   config.publicHosts.forEach((host) => allowedHosts.add(host));
 
   app.disable('x-powered-by');
