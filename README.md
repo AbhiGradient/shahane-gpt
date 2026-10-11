@@ -125,4 +125,4 @@ scripts/                  build-cpp.js, smoke-test.js
 * `qa_database.txt` → `data/qa_database.txt` (byte-identical).
 * `.vscode/tasks.json` replaced with npm-based build/start/test tasks.
 
-**Removed:** the prebuilt `ShahaneBot.cpp.exe` (rebuilt from source instead).
+**Removed:** the prebuilt `ShahaneBot.cpp.exe` (rebuilt from source instead). 
